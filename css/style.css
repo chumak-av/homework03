@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 165px;
+    margin-left: 165px;
+    margin-top: 76px;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #626262;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.nav-item .nav-link:hover {
+    color: #03a9f4;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -83px;
+}
+
+.card {
+    width: calc( 100% / 2 - 60px);
+    margin-bottom: 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img {
+    width: 100%;
+}
+
+.min-title {
+    font-size: 14px;
+    color: #b4ad9e;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #626262;
+    font-weight: 400;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #626262;
+    font-weight: 400;
+}
+
+.card-foot {
+    width: 164px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #626262;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #626262;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+
+@media ( max-width:768px) {
+    .main-container {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .list {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .nav-item {
+        margin-top: 17px;
+    }
+    .container {
+        margin-top: 50px;
+        margin-bottom: unset;
+    }
+    .min-title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .card-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .card {
+        margin-bottom: 50px;
+        width: calc(100% / 2 - 30px);
+    }
+    .card-foot {
+        margin-bottom: 30px;
+    }
+}
+
+@media ( max-width:576px) {
+    .card {
+        width: 100%;
+        align-items: center;
+    }
+    .card-text {
+        text-align: center;
+    }
+}
