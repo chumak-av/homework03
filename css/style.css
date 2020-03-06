@@ -136,7 +136,7 @@
         width: 100%;
         align-items: center;
     }
-    .card-text {
+    .card-text .card-title {
         text-align: center;
     }
 }
